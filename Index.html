@@ -18,6 +18,25 @@
     function Home() {
       return e(
   'div',
+        e(
+  'div',
+  {
+    style: {
+      backgroundColor: '#111',
+      color: '#d4af37',
+      padding: '15px',
+      display: 'flex',
+      justifyContent: 'space-around',
+      fontWeight: 'bold'
+    }
+  },
+  e('span', null, 'Home'),
+  e('span', null, 'About'),
+  e('span', null, 'Plans'),
+  e('span', null, 'Contact'),
+  e('span', null, 'Login'),
+  e('span', null, 'Sign Up')
+),
   {
     style: {
       fontFamily: 'Arial, sans-serif',
