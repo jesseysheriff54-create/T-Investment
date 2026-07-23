@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T Investment</title>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body style="margin:0;background:#f5f5f5;">
+<div id="root"></div>
+
+<script>
+const e = React.createElement;
+
+function Home() {
+  return e(
+    "div",
+    {style:{fontFamily:"Arial, sans-serif"}},
+
+    e(
+      "div",
+      {
+        style:{
+          background:"#111",
+          color:"#d4af37",
+          display:"flex",
+          justifyContent:"space-around",
+          padding:"18px",
+          fontWeight:"bold"
+        }
+      },
+      e("span",null,"Home"),
+      e("span",null,"About"),
+      e("span",null,"Plans"),
+      e("span",null,"Contact"),
+      e("span",null,"Login"),
+      e("span",null,"Sign Up")
+    ),
+
+    e(
+      "div",
+      {
+        style:{
+          textAlign:"center",
+          padding:"80px 20px"
+        }
+      },
+      e("h1",null,"T Investment"),
+      e("p",null,"Grow Your Wealth with Confidence"),
+
+      e(
+        "button",
+        {
+          style:{
+            background:"#d4af37",
+            color:"#111",
+            border:"none",
+            padding:"12px 24px",
+            borderRadius:"6px",
+            margin:"10px",
+            fontWeight:"bold"
+          }
+        },
+        "Get Started"
+      ),
+
+      e(
+        "button",
+        {
+          style:{
+            background:"#111",
+            color:"#fff",
+            border:"1px solid #d4af37",
+            padding:"12px 24px",
+            borderRadius:"6px",
+            margin:"10px"
+          }
+        },
+        "Learn More"
+      )
+    )
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(e(Home));
+</script>
+
+</body>
+</html>
