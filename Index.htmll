@@ -1,14 +1,1 @@
-function Home()
-{
-  return e(
-    'div',
-    { style: { textAlign: 'center', marginTop: '50px' } },
-    e('h1', null, 'Welcome to T Investment'),
-    e('p', null, 'Your trusted platform for crypto and USD investments.')
-  );
-}
 
-ReactDOM.render(
-  e(Home),
-  document.getElementById('root')
-);
