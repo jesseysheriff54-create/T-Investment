@@ -1,379 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>T Investment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T Investment</title>
 
-<style>margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-    } body{
-    background:#f5f5f5;
-    color:#222;
-}
-
-nav{
-    background:#111;
-    padding:18px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    color:#d4af37;
-    font-size:28px;
-    font-weight:bold;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#d4af37;
-}
-.hero{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:140px 20px
-    ("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:140px 20px;
-}
-
-.hero h1{
-    font-size:55px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:22px;
-    max-width:800px;
-    margin:auto;
-    line-height:1.7;
-}
-
-.buttons{
-    margin-top:40px;
-}
-
-.gold-btn{
-    background:#d4af37;
-    color:#111;
-    border:none;
-    padding:15px 35px;
-    border-radius:6px;
-    font-size:18px;
-    margin:10px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.black-btn{
-    background:#111;
-    color:white;
-    border:1px solid #d4af37;
-    padding:15px 35px;
-    border-radius:6px;
-    font-size:18px;
-    margin:10px;
-    cursor:pointer;
-}
-
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:70px;
-    margin-top:70px;
-    flex-wrap:wrap;
-}
-
-.stat h2{
-    color:#d4af37;
-    font-size:36px;
-}
-
-.stat p{
-    font-size:18px;
-}
-
-.plans{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.plans h2{
-    font-size:42px;
-    margin-bottom:50px;
-}
-
-.cards{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.card{
-    background:white;
-    width:300px;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-}
-
-.card h3{
-    color:#d4af37;
-    margin-bottom:15px;
-}
-
-.card h1{
-    margin:20px 0;
-}
-
-.card button{
-    background:#111;
-    color:white;
-    border:none;
-    padding:12px 25px;
-    border-radius:6px;
-    cursor:pointer;
-}
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
-  .cards,
-  .stats {
-    flex-direction: column;
-    align-items: center;
-  }
- .card {
-    width: 90%;
-    max-width: 350px;
-  }
-  .hero h1 {
-    font-size: 36px;
-  }
- .hero p {
-</style>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
+<header>
+    <nav class="navbar">
+        <div class="logo">T Investment</div>
 
-<div class="logo">
-T Investment
-</div>
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Plans</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="#">Login</a></li>
-<li><a href="#">Sign Up</a></li>
-</ul>
-
-</nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
 
 <section class="hero">
+    <div class="hero-content">
+        <h1>Secure Investments for a Better Tomorrow</h1>
 
-<h1>Secure Investments for a Better Tomorrow</h1>
+        <p>
+            Grow your wealth with confidence through secure, transparent,
+            and professionally managed investment opportunities.
+        </p>
 
-<p>
-Join thousands of investors growing their wealth through secure,
-transparent and profitable investment opportunities.
-</p>
+        <div class="buttons">
+            <button class="gold-btn">Start Investing</button>
+            <button class="black-btn">Learn More</button>
+        </div>
+    </div>
+</section>
 
-<div class="buttons">
+<section class="stats">
 
-<button class="gold-btn">
-Start Investing
-</button>
+    <div class="stat">
+        <h2>10,000+</h2>
+        <p>Happy Investors</p>
+    </div>
 
-<button class="black-btn">
-Learn More
-</button>
+    <div class="stat">
+        <h2>$50M+</h2>
+        <p>Assets Managed</p>
+    </div>
 
-</div>
-
-<div class="stats">
-
-<div class="stat">
-<h2>10,000+</h2>
-<p>Happy Investors</p>
-</div>
-
-<div class="stat">
-<h2>$50M+</h2>
-<p>Assets Managed</p>
-</div>
-
-<div class="stat">
-<h2>99.9%</h2>
-<p>Secure Platform</p>
-</div>
-
-</div>
+    <div class="stat">
+        <h2>24/7</h2>
+        <p>Customer Support</p>
+    </div>
 
 </section>
 
-<section class="plans">
+<section class="about" id="about">
 
-<h2>Investment Plans</h2>
+    <h2>About T Investment</h2>
 
-<div class="cards">
-
-<div class="card">
-<h3>Starter Plan</h3>
-<h1>10%</h1>
-<p>Monthly Return</p>
-<br>
-<button>Choose Plan</button>
-</div>
-
-<div class="card">
-<h3>Premium Plan</h3>
-<h1>18%</h1>
-<p>Monthly Return</p>
-<br>
-<button>Choose Plan</button>
-</div>
-
-<div class="card">
-<h3>VIP Plan</h3>
-<h1>25%</h1>
-<p>Monthly Return</p>
-<br>
-<button>Choose Plan</button>
-</div>
-
-</div>
-
-</section>
-    <section style="background:#111; color:white; padding:80px 20px; text-align:center;">
-
-    <h2 style="color:#d4af37; font-size:42px; margin-bottom:25px;">
-         </h2>
-
-    <p style="max-width:900px; margin:auto; font-size:20px; line-height:1.8;">
+    <p>
         T Investment is committed to helping individuals and businesses
-        achieve financial growth through secure, transparent, and innovative
-        investment opportunities. Our mission is to provide reliable wealth
-        management solutions backed by professionalism, integrity, and
-        outstanding customer service.
+        build wealth through secure, transparent, and innovative
+        investment opportunities.
     </p>
 
-    <div style="display:flex; justify-content:center; gap:40px; margin-top:60px; flex-wrap:wrap;">
-
-        <div>
-            <h1 style="color:#d4af37;">10,000+</h1>
-            <p>Active Investors</p>
-        </div>
-
-        <div>
-            <h1 style="color:#d4af37;">15+</h1>
-            <p>Investment Experts</p>
-        </div>
-style="font-size:42px; color:#111; margin-bottom:20px;">
-Why Choose T Investment?
-</h2>
-
-<p style="font-size:18px; color:#666; margin-bottom:50px;">
-We combine security, transparency and professional investment strategies to help our clients achieve long-term financial success.
-</p>
-
-<div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
-
-<div style="background:white; width:280px; padding:30px; border-radius:12px; box-shadow:0 5px 20px rgba(0,0,0,.1);">
-<h1 style="font-size:50px;">🔒</h1>
-<h3 style="color:#d4af37;">Secure Investments</h3>
-<p>Your investments are managed with industry-standard security and transparency.</p>
-</div>
-
-<div style="background:white; width:280px; padding:30px; border-radius:12px; box-shadow:0 5px 20px rgba(0,0,0,.1);">
-<h1 style="font-size:50px;">📈</h1>
-<h3 style="color:#d4af37;">High Growth Potential</h3>
-<p>Access carefully selected investment opportunities designed for sustainable growth.</p>
-</div>
-
-<div style="background:white; width:280px; padding:30px; border-radius:12px; box-shadow:0 5px 20px rgba(0,0,0,.1);">
-<h1 style="font-size:50px;">🤝</h1>
-<h3 style="color:#d4af37;">Trusted Support</h3>
-<p>Our dedicated team is available to help you every step of your investment journey.</p>
-</div>
-
-</div>
-
 </section>
-    
-    
-        <div>
-            <h1 style="color:#d4af37;">24/7</h1>
-            <p>Customer Support</p>
+
+<section class="plans" id="plans">
+
+    <h2>Investment Plans</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Starter Plan</h3>
+            <h1>10%</h1>
+            <p>Monthly Return</p>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="card">
+            <h3>Premium Plan</h3>
+            <h1>18%</h1>
+            <p>Monthly Return</p>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="card">
+            <h3>VIP Plan</h3>
+            <h1>25%</h1>
+            <p>Monthly Return</p>
+            <button>Choose Plan</button>
         </div>
 
     </div>
 
 </section>
-<div style="background:#222;padding:30px;border-radius:12px;width:320px;">
-<p>
-★★★★★
-</p>
-<p>
-"T Investment has helped me grow my savings with confidence. Their support team is always responsive."
-</p>
-<br>
-<strong>— Michael A.</strong>
-</div>
 
-<div style="background:#222;padding:30px;border-radius:12px;width:320px;">
-<p>
-★★★★★
-</p>
-<p>
-"I appreciate the transparency and professionalism. I always know how my investments are performing."
-</p>
-<br>
-<strong>— Sarah K.</strong>
-</div>
+<section class="why" id="why">
 
-<div style="background:#222;padding:30px;border-radius:12px;width:320px;">
-<p>
-★★★★★
-</p>
-<p>
-"The platform is easy to use, and the educational resources helped me understand investing better."
-</p>
-<br>
-<strong>— David O.</strong>
-</div>
+    <h2>Why Choose T Investment?</h2>
 
-</div>
+    <div class="cards">
+
+        <div class="card">
+            <h1>🔒</h1>
+            <h3>Secure Investments</h3>
+            <p>Your security is our priority.</p>
+        </div>
+
+        <div class="card">
+            <h1>📈</h1>
+            <h3>Growth</h3>
+            <p>Professionally managed investment opportunities.</p>
+        </div>
+
+        <div class="card">
+            <h1>🤝</h1>
+            <h3>Trusted Support</h3>
+            <p>Our team is always ready to assist you.</p>
+        </div>
+
+    </div>
 
 </section>
+
+<section class="testimonials" id="testimonials">
+
+    <h2>What Our Clients Say</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>★★★★★</p>
+            <p>"Excellent service and professional support."</p>
+            <strong>— Michael A.</strong>
+        </div>
+
+        <div class="card">
+            <p>★★★★★</p>
+            <p>"Transparent and easy to understand."</p>
+            <strong>— Sarah K.</strong>
+        </div>
+
+        <div class="card">
+            <p>★★★★★</p>
+            <p>"A platform that makes investing simple."</p>
+            <strong>— David O.</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: support@tinvestment.com</p>
+    <p>Phone: +1 (000) 000-0000</p>
+
+</section>
+
+<footer>
+
+    <p>&copy; 2026 T Investment. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T Investment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">T Investment</div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Secure Investments for a Better Tomorrow</h1>
+
+        <p>
+            Grow your wealth with confidence through secure, transparent,
+            and professionally managed investment opportunities.
+        </p>
+
+        <div class="buttons">
+            <button class="gold-btn">Start Investing</button>
+            <button class="black-btn">Learn More</button>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+
+    <div class="stat">
+        <h2>10,000+</h2>
+        <p>Happy Investors</p>
+    </div>
+
+    <div class="stat">
+        <h2>$50M+</h2>
+        <p>Assets Managed</p>
+    </div>
+
+    <div class="stat">
+        <h2>24/7</h2>
+        <p>Customer Support</p>
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>About T Investment</h2>
+
+    <p>
+        T Investment is committed to helping individuals and businesses
+        build wealth through secure, transparent, and innovative
+        investment opportunities.
+    </p>
+
+</section>
+
+<section class="plans" id="plans">
+
+    <h2>Investment Plans</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Starter Plan</h3>
+            <h1>10%</h1>
+            <p>Monthly Return</p>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="card">
+            <h3>Premium Plan</h3>
+            <h1>18%</h1>
+            <p>Monthly Return</p>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="card">
+            <h3>VIP Plan</h3>
+            <h1>25%</h1>
+            <p>Monthly Return</p>
+            <button>Choose Plan</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="why" id="why">
+
+    <h2>Why Choose T Investment?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h1>🔒</h1>
+            <h3>Secure Investments</h3>
+            <p>Your security is our priority.</p>
+        </div>
+
+        <div class="card">
+            <h1>📈</h1>
+            <h3>Growth</h3>
+            <p>Professionally managed investment opportunities.</p>
+        </div>
+
+        <div class="card">
+            <h1>🤝</h1>
+            <h3>Trusted Support</h3>
+            <p>Our team is always ready to assist you.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="testimonials" id="testimonials">
+
+    <h2>What Our Clients Say</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>★★★★★</p>
+            <p>"Excellent service and professional support."</p>
+            <strong>— Michael A.</strong>
+        </div>
+
+        <div class="card">
+            <p>★★★★★</p>
+            <p>"Transparent and easy to understand."</p>
+            <strong>— Sarah K.</strong>
+        </div>
+
+        <div class="card">
+            <p>★★★★★</p>
+            <p>"A platform that makes investing simple."</p>
+            <strong>— David O.</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: support@tinvestment.com</p>
+    <p>Phone: +1 (000) 000-0000</p>
+
+</section>
+
+<footer>
+
+    <p>&copy; 2026 T Investment. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
