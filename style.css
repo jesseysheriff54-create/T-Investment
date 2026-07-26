@@ -407,3 +407,51 @@ footer{
 .stat-box p{
     color:#ddd;
 }
+/* ===== PLANS ===== */
+
+.plans{
+    padding:80px 8%;
+    text-align:center;
+    background:#0d0d0d;
+}
+
+.plans h2{
+    font-size:42px;
+    color:#d4af37;
+    margin-bottom:50px;
+}
+
+.plan-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.plan-card{
+    background:#1a1a1a;
+    padding:35px;
+    width:300px;
+    border-radius:12px;
+    transition:.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.plan-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 35px rgba(212,175,55,.3);
+}
+
+.plan-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.plan-card h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.plan-card p{
+    margin-bottom:12px;
+}
