@@ -373,3 +373,37 @@ footer{
     max-width:350px;
 }
 }
+/* ===== STATS ===== */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:70px 8%;
+    background:#111;
+}
+
+.stat-box{
+    text-align:center;
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:12px;
+    width:220px;
+    transition:.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(212,175,55,.25);
+}
+
+.stat-box h2{
+    color:#d4af37;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    color:#ddd;
+}
