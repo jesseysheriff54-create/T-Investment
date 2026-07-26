@@ -497,3 +497,47 @@ footer{
 .why-card p{
     color:#ddd;
 }
+/* Testimonials */
+.testimonials {
+    background: #111;
+    color: #fff;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #1b1b1b;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(212,175,55,0.4);
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(212,175,55,0.3);
+}
+
+.testimonial-card p {
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-card h4 {
+    color: #d4af37;
+    font-weight: 600;
+}
