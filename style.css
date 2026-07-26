@@ -541,3 +541,79 @@ footer{
     color: #d4af37;
     font-weight: 600;
 }
+/* Contact Section */
+
+.contact{
+    padding:80px 10%;
+    background:#111;
+    color:#fff;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:2.5rem;
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.contact p{
+    color:#ccc;
+    margin-bottom:40px;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+    align-items:start;
+}
+
+.contact-info{
+    text-align:left;
+}
+
+.contact-info h3{
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:15px 0;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#1e1e1e;
+    color:#fff;
+    font-size:16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:2px solid #d4af37;
+}
+
+.contact-form button{
+    padding:15px;
+    background:#d4af37;
+    color:#111;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#f0c94d;
+}
